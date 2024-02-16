@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PH tube</title>
 
+    <link rel="stylesheet" href="style.css">
+
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -22,22 +24,21 @@
 
     <main>
         <div class="flex justify-center items-center gap-8 my-8">
-            <button class="btn btn-active lg:px-6 lg:text-xl">All</button>
-            <button class="btn btn-active lg:px-6 lg:text-xl">Music</button>
-            <button class="btn btn-active lg:px-6 lg:text-xl">Comedy</button>
-            <button class="btn btn-active lg:px-6 lg:text-xl">Drawing</button>
+            <button onclick="loadData(this)" class="btn btn-active lg:px-6 lg:text-xl">All</button>
+            <button onclick="loadData(this)" class="btn btn-active lg:px-6 lg:text-xl">Music</button>
+            <button onclick="loadData(this)" class="btn btn-active lg:px-6 lg:text-xl">Comedy</button>
+            <button onclick="loadData(this)" class="btn btn-active lg:px-6 lg:text-xl">Drawing</button>
         </div>
     </main>
 
-    <section class="grid lg:grid-cols-4 grid-cols-1 gap-4">
-        <div class="border border-black w-[100%] h-44"></div>
-        <div class="border border-black w-[100%] h-44"></div>
-        <div class="border border-black w-[100%] h-44"></div>
-        <div class="border border-black w-[100%] h-44"></div>
-        <div class="border border-black w-[100%] h-44"></div>
-        <div class="border border-black w-[100%] h-44"></div>
-        <div class="border border-black w-[100%] h-44"></div>
-        <div class="border border-black w-[100%] h-44"></div>
+    <section id="video-container" class="grid lg:grid-cols-4 grid-cols-1 gap-4">
+        
     </section>
+
+    <section id="no-content" class="text-center space-y-4 p-14">
+        
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,28 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.card > img {
+    width: 100%;
+    height: 50%;
+}
+
+.details-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.profile-img {
+    padding-top: 1.5rem;
+}
+
+.verified {
+    display: flex;
+    justify-content: space-between;
+}
+
+.verified-sign {
+    padding-top: 1rem;
+}
