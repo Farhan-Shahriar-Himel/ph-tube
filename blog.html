@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-500">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="">
+    <main class="container mx-auto mt-20 p-10 space-y-4">
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" checked="checked" /> 
+            <div class="collapse-title text-xl font-medium">
+                discuss the scope of var let and const
+            </div>
+            <div class="collapse-content"> 
+              <h1 class="font-bold">Var -> </h1>
+                <p>var type variable are function scoped. That means they are accessible from every where through out the entire code.</p>
+                <h1 class="font-bold">let -> </h1>
+                <p>let type variable are block scoped. They can only be accessed on their own block.</p>
+                <h2 class="font-bold">const -> </h2>
+                <p>const type variable are also block scoped. But they must need the initialization when then declared and after initialized they can not be changed or updated.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-medium">
+                Tell us the use cases of null and undefined
+            </div>
+            <div class="collapse-content"> 
+                <h1 class="font-bold">undefined -> </h1>
+                <p>undefined means the variable has been declared but not initialized by any value.</p>
+                <p>We can use it when we do not need to assign a value but we need to declare a variable. And this is the default value of a variable</p>
+                <h1 class="font-bold">null -? </h1>
+                <p>null means the absence of any object value.</p>
+                <p>We can use it when we need to clear the variable but at the same time we need to indicate the absence of the value</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-medium">
+                What do you mean by REST API?
+            </div>
+            <div class="collapse-content"> 
+              <p>full form of REST API is Representational State Transfer Application Programming Interface.  It is an architectural style for designing networked applications. It is used widely in web development</p>
+            </div>
+          </div>
+    </main>
+</body>
+</html>
