@@ -1,4 +1,5 @@
 let id;
+let dark_text, light_text;
 
 function make_red(key) {
     const buttons = document.getElementsByClassName('clicky-btn');
@@ -9,12 +10,26 @@ function make_red(key) {
             b.style.color = 'white';
         } else {
             b.style.backgroundColor = "";
-            b.style.color = '';
+            b.style.color = 'black';
         }
     }
 }
 
 function loadData(event) {
+
+    const buttons = document.getElementsByClassName('clicky-btn');
+    for (let button of buttons) {
+        button.removeEventListener('mouseover', dark_text);
+        button.removeEventListener('mouseout', light_text);
+    }
+
+    event.addEventListener('mouseover', dark_text = () => {
+        event.style.color = 'black';
+    });
+    event.addEventListener('mouseout', light_text = () => {
+        event.style.color = 'white';
+    });
+
     fetch('https://openapi.programming-hero.com/api/videos/categories')
         .then((response) => response.json())
         .then((data) => {
